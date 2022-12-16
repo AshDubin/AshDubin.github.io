@@ -1,0 +1,101 @@
+<html>
+  <head>
+    <link href="http://your-website.com/fonts/Calibri.ttf" rel="stylesheet" type="text/css">
+    <style>
+      body {
+        background: linear-gradient(to bottom, #0e247d, #1d0e7d);
+        color: white;
+        text-align: center;
+        font-size: 2em;
+        font-family: "Calibri", sans-serif;
+      }
+      .quotes {
+        border-radius: 10px; /* round the corners with a 10px radius */
+        margin: 2em;
+        padding: 1em;
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+      button {
+        background: none;
+        border: none;
+        padding: 0.5em 1em;
+      }
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: none;
+      }
+      /* Add some styling for the button and sub menu */
+      .password-button {
+        background: none;
+        border: none;
+        color: white;
+        font-size: 0.5em;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      .submenu {
+        display: none; /* Hide the sub menu by default */
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        margin: 2em;
+        padding: 1em;
+      }
+      /* Style the password field */
+      input[type="password"] {
+        border: none;
+        border-bottom: 2px solid white;
+        font-size: 1em;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Button to toggle the sub menu -->
+    <button class="password-button" onclick="toggleSubMenu()">Login</button>
+ 
+
+    <h1>Welcome to my website!</h1>
+    <p>I'm glad you're here.</p>
+    <p>You can find me on Discord:</p>
+    <h6>feardubin#9344</h6>
+    <button onclick="window.location.href = 'http://discordapp.com/users/787264555847909417';">
+      <img src="https://webstockreview.net/images/discord-icon-png.png" alt="Discord icon">
+    </button>
+    <p>You can also contact me via email at:</p>
+    <h6>ali@feardubin.com</h6>
+    <button onclick="window.location.href = 'mailto:ali@feardubin.com';">
+      <img src="https://th.bing.com/th/id/R.66cdca2a32dc3ffee6c16b1b39615096?rik=LPgeH3rxBq4QBA&riu=http%3a%2f%2fwww.clintonfitch.com%2fwp-content%2fuploads%2f2018%2f01%2fGmail-Icon.png&ehk=faQcrEq8H976O8CxSZcIBjaMzIGFMSDDtixcpxVRgrc%3d&risl=&pid=ImgRaw&r=0" alt="Email icon">
+    </button>
+
+    <p>You can also contact me on:</p>
+    <h6>+44 746060 7224</h6>
+    <a href="tel:+447460607224">
+      <button>
+        <img src="https://th.bing.com/th/id/R.e2b6e7f9171c1a746b6d89979380f384?rik=AOPD0S7CpIgN9g&riu=http%3a%2f%2ficons.iconarchive.com%2ficons%2fxenatt%2fthe-circle%2f256%2fApp-Messages-icon.png&ehk=LZZguLFRTtxfQ8ag9rpn6NKBlkFyT95sF40cKZZ%2fRBQ%3d&risl=&pid=ImgRaw&r=0" alt="Phone icon">
+      </button>
+    </a>
+
+    <div class="quotes">
+      <h2>Inspirational Quotes</h2>
+        <h6>Nixxune, December 2021, "Hey, lol."</h6>
+        <h6>Iulian Slabu, November 2022, "Something, something, trader mindset."</h6>
+        <h6>Ramin Battaei, January 2020, "When it is warm outside, it is likely summer."</h6>
+        <h6>Kyryl Shishkin, September 2022, "Just hit my stop-loss."</h6>
+        <h6>Maani Milligan, October 2022, "No way - I'm actually in profit!"</h6>
+        <h6>Ramin Battaei, Febuary 2021, "When water falls from the sky, it is raining."</h6>
+        <h6>Kyryl Shishkin, July 2022, "Intel is in a temporary downtrend."</h6>
+        <h6>Ali Movasaghpour, April 2021, "The bus is bussin."</h6>
+        <h6>Maani Milligan, September 2022, "I'm in profit! Oh wait, nevermind."</h6>
+        <h6>Ali Movasaghpour, December 2022, "I sure could go for some McDonald's right now."</h6>
+    <script>
+    function toggleSubMenu() {
+         const submenu = document.querySelector('.submenu');
+         submenu.style.display = (submenu.style.display === 'none') ? 'block' : 'none';
+    }
+    </script>
+  </body>
+</html>

@@ -56,7 +56,11 @@
   <body>
     <!-- Button to toggle the sub menu -->
     <button class="password-button" onclick="toggleSubMenu()">Login</button>
- 
+
+    <!-- Submenu -->
+    <div class="submenu" id="submenu">
+      <!-- Submenu content goes here -->
+    </div>
 
     <h1>Welcome to my website!</h1>
     <p>I'm glad you're here.</p>
@@ -68,35 +72,28 @@
     <p>You can also contact me via email at:</p>
     <h6>ali@feardubin.com</h6>
     <button onclick="window.location.href = 'mailto:ali@feardubin.com';">
-      <img src="https://th.bing.com/th/id/R.66cdca2a32dc3ffee6c16b1b39615096?rik=LPgeH3rxBq4QBA&riu=http%3a%2f%2fwww.clintonfitch.com%2fwp-content%2fuploads%2f2018%2f01%2fGmail-Icon.png&ehk=faQcrEq8H976O8CxSZcIBjaMzIGFMSDDtixcpxVRgrc%3d&risl=&pid=ImgRaw&r=0" alt="Email icon">
+      <img src="https://th.bing.com/th/id/R.66cdca2a3232dc3ffee6c16b1b39615096?rik=LPgeH3rxBq4QBA&riu=http%3a%2f%2fwww.clintonfitch.com%2fwp-content%2fuploads%2f2018%2f01%2fGmail-Icon.png&ehk=faQcrEq8H976O8CxSZcIBjaMzIGFMSDDtixcpxVRgrc%3d&risl=&pid=ImgRaw&r=0" alt="Email icon">
     </button>
 
     <p>You can also contact me on:</p>
     <h6>+44 746060 7224</h6>
     <a href="tel:+447460607224">
       <button>
-        <img src="https://th.bing.com/th/id/R.e2b6e7f9171c1a746b6d89979380f384?rik=AOPD0S7CpIgN9g&riu=http%3a%2f%2ficons.iconarchive.com%2ficons%2fxenatt%2fthe-circle%2f256%2fApp-Messages-icon.png&ehk=LZZguLFRTtxfQ8ag9rpn6NKBlkFyT95sF40cKZZ%2fRBQ%3d&risl=&pid=ImgRaw&r=0" alt="Phone icon">
+        <img src="https://th.bing.com/th/id/R.e2b6e7f9171c1a746b6d89979380f384?rik=AOPD0S7CpIgN9g&riu=http%3a%2f%2ficons.iconarchive.com%2ficons%2fxenatt%2fthe-circle%2f256%2fApp-Messages-icon.png&ehk=LZZguLFRTtxfQ8agRnR%2fQO47G%2bK%2bIp5W5q5xZb5KU%3d&risl=&pid=ImgRaw&r=0" alt="Phone icon">
       </button>
     </a>
 
-    <div class="quotes">
-      <h2>Inspirational Quotes</h2>
-        <h6>Nixxune, December 2021, "Hey, lol."</h6>
-        <h6>Iulian Slabu, November 2022, "Something, something, trader mindset."</h6>
-        <h6>Ramin Battaei, January 2020, "When it is warm outside, it is likely summer."</h6>
-        <h6>Kyryl Shishkin, September 2022, "Just hit my stop-loss."</h6>
-        <h6>Maani Milligan, October 2022, "No way - I'm actually in profit!"</h6>
-        <h6>Ramin Battaei, Febuary 2021, "When water falls from the sky, it is raining."</h6>
-        <h6>Kyryl Shishkin, July 2022, "Intel is in a temporary downtrend."</h6>
-        <h6>Ali Movasaghpour, April 2021, "The bus is bussin."</h6>
-        <h6>Ramin Battaei, November 2022, "Somalia."</h6>
-        <h6>Maani Milligan, September 2022, "I'm in profit! Oh wait, nevermind."</h6>
-        <h6>Ali Movasaghpour, December 2022, "I sure could go for some McDonald's right now."</h6>
+    <!-- Toggle submenu function -->
     <script>
-    function toggleSubMenu() {
-         const submenu = document.querySelector('.submenu');
-         submenu.style.display = (submenu.style.display === 'none') ? 'block' : 'none';
-    }
+      function toggleSubMenu() {
+        var submenu = document.getElementById('submenu');
+        if (submenu.style.display === 'none') {
+          submenu.style.display = 'block';
+        } else {
+          submenu.style.display = 'none';
+        }
+      }
     </script>
   </body>
 </html>
+
